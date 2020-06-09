@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js Simple Draw</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script><!-- Using the offical p5.js CDN https://cdnjs.com/libraries/p5.js -->
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <div id="info">
+      <h1>Spebula</h1>
+      <h3>Random shapes that look a bit like a Nebula.</h3>
+      <button onclick="save('spebula.jpg')">Save Image</button>
+      <button onclick="generate()">Make Another!</button>
+    </div>
+  </body>
+  <style>
+    body{
+      background-color: #0e0f0f;
+      color: white;
+    }
+    #info{
+      margin: 0;
+      position: absolute;
+      right: 3%;
+      width: 18%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center;
+      font-family: sans-serif;
+    }
+    canvas {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 2%;
+      filter: drop-shadow(5px 10px 4px black);
+    }
+    button{
+      width: 100%;
+      background-color: #ff474c;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    h3{
+      font-weight: normal;
+    }
+  </style>
+</html>
